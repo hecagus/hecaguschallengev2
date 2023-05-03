@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Encriptador de Texto</title>
+  <script src="https://kit.fontawesome.com/750ba6d981.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <img src="Logo.svg" alt="logo" id="logo">
+  </header>
+
+  <main>
+    <section class="form-box">
+      <form>
+        <div class="label-info">
+          <img src="alerta.svg" alt="importante" id="imgInfo">  
+          <label class="info" for="input-texto">Solo letras minúsculas, sin acentos</label>
+        </div>
+        <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aquí">
+        <div id="botones">
+          <input class="btn" type="button" value="Encriptar" id="btn-encriptar">
+          <input class="btn2" type="button" value="Desencriptar" id="btn-desencriptar">
+        </div>
+      </form>
+    </section>
+    
+    <section class="msg-box" id="cajaR">
+      <h2></h2>
+          
+      <div id="divImagen">
+        <picture>
+          <source srcset="./img/Muñeco.svg" media="(max-width: 400px)">
+          <img src="Muñeco.svg" id="imagen" class="img">
+        </picture>
+        <p class="texto1"><strong>Ningún mensaje fue encontrado</strong></p>
+        <p class="texto2">Ingrese el texto que deseas encriptar o desencriptar</p>
+      </div>
+      <div id="botonCopiar">
+        <input class="text-input-salida" type="text" id="msg">
+        <input class="btn3" type="button" value="Copiar" id="btn-copy">
+      </div>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
